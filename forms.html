@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+    <h2>Personal information</h2>
+    <form method="get" action="register.php">
+
+        First Name:<br><input type="text" name="firstname" required="true" auto-complete="off"><br><br>
+        Last Name:<br><input type="text" name="lastname" placeholder="(Optional)"><br><br>
+        Username:<br><input type="text" name="username" required="true"><br><br>
+        Password:<br><input type="password" name="pwd" required="true"><br><br>
+        Email:<br><input type="email" name="email" placeholder="(Optional)"><br><br>
+        Phone Number:<br><input type="number" name="phone number" required="true"><br><br>
+        Date of Birth:<br><input type="date" name="dob" required="true"><br><br>
+        Age:<br><input type="number" name="age" min="18" max="65" required="true"><br><br>
+
+        Gender:<aria-required="true" ><br>
+            Male<input type="radio" name="gender" value="male">
+            Female<input type="radio" name="gender" value="female"><br><br>
+            Upload Photo:<br><input type="file" name="file" file="image/*" required><br><br>
+
+            <h2>Academic Information</h2>
+            Student ID:<br><input type="number" name="id"><br><br>
+            Select Course:</aria-required><br>
+            <select required="true">
+                <option name="course">Bs English</option>
+                <option name="course">Bs Anatomy</option>
+                <option name="course">Bs Zoology</option>
+                <option name="course">Bs CS</option>
+                <option name="course">Bs IT</option>
+                <option name="course">Bs Math</option>
+                <option name="course">Bs Islamiyat</option>
+            </select><br> <br>
+            Choose Your Favourite Subjects:<br></required="true">
+            Math:<input type="checkbox" name="sub" value="math">
+            English:<input type="checkbox" name="sub" value="english">
+            Science:<input type="checkbox" name="sub" value="science">
+            History:<input type="checkbox" name="sub" value="history">
+            Computer:<input type="checkbox" name="sub" value="computer"><br><br>
+
+            Current Grade(Range 1-10):<br>
+            <input type="range" name="range" maxlength="10" required><br><br>
+
+            <h3>Address Details</h3>
+            Address:<br>
+            <textarea name="address" rows="4" cols="15" placeholder="(Optional)"></textarea><br><br>
+
+            City:<br><input type="text" name="city" maxlength="15" autocomplete="off" placeholder="(Optional)"><br><br>
+            State:<br><input type="text" name="State" maxlength="15" autocomplete="off" required="true"><br><br>
+            ZIP Code:<br><input type="number" name="zipcode" min="5" max="8" autocomplete="off" required="true"><br><br>
+            Country:<br><input type="text" name="country" maxlength="16" required="true" autocomplete="off"><br><br>
+
+            <h2>Other Information</h2>
+            Favourite Color:<br>
+            <input type="color" name="color" placeholder="(Optional)"><br><br>
+            Personal Website:<br>
+            <input type="url" name="website_url" placeholder="(Optional)"><br><br>
+            Preferred Study Time:<br>
+            <input type="time" name="study_time" required="true"><br><br>
+            Enrollment Week:<br>
+            <input type="week" name="week" aria-required="true"><br><br>
+            Admission Month:<br>
+            <input type="month" name="admision_month" required="true"><br><br>
+            Search Interest:<br>
+            <input type="search" name="search" placeholder="(Optional)"><br><br><br>
+
+            <h2>Agreement</h2>
+
+            <input type="radio" name="agreement" required="true">I hereby declare that the information provided above is
+            true<br><br>
+
+            <button type="reset" name="reset" aria-required="true">Reset Form</button>
+            <button type="submit" name="submit" aria-required="true">Submit Registration</button>
+    </form>
+</body>
+
+</html>
