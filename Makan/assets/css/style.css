@@ -2,12 +2,16 @@
     --green-color: #00B98E;
     --bg-light: #c0f3f1 !important;
     --back-color: rgb(255, 255, 255);
+    --shadow-color: #effdfb !important;
 }
 
 .bg-success {
     background-color: var(--green-color) !important;
 }
 
+.bgb-light{
+    background-color: var(--shadow-color);
+}
 .logo-img {
     border: 1px dashed var(--green-color);
     border-radius: 100%;
@@ -172,4 +176,13 @@
 
 .btn-hover:hover  {
     color: blue;
+}
+.sided-border {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--green-color);
+    border-radius: 100%;
 }
