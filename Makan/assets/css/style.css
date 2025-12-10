@@ -187,3 +187,10 @@
     border: 1px dashed var(--green-color);
     border-radius: 100%;
 }
+.control-shape {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
