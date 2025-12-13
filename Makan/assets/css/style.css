@@ -57,6 +57,7 @@ header{
     width: 100%;
     object-fit: cover;
     position: relative;
+    transition: smooth;
 
     
 }
