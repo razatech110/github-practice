@@ -84,10 +84,16 @@ header{
     position: absolute;
     opacity: 1;
 }
+.btn-blue {
+    background-color: rgb(30, 30, 95);
+    color: white;
+    border: none;
+}
 
 .fs-8 {
     font-size: 50px;
 }
+
 
 .fs-7 {
     font-size: 45px;
